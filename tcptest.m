@@ -18,7 +18,7 @@ disp("sending value")
 
 x = read(server,server.NumBytesAvailable,"char")
 b = jsondecode(x)
-var.signals.values = b.values
+%var.signals.values = b.values
 waitfor(server,"Connected",0)
 disp("server disconnected")
 clear server
